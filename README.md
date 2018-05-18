@@ -4,9 +4,13 @@ de:code2018 シアターセッション #AC61　「Custom Vision ServiceとWindo
 
 サンプルコードに関するお問い合わせは下記までお願いします。
 
+
 E-Mail：yoshi_h@ba2.so-net.ne.jp
+
 Facebook：https://www.facebook.com/yoshinori.hayashi.33
+
 LinkedIn：https://www.linkedin.com/in/yoshinorihayashi
+
 Twitter：@linyixian
 
 
