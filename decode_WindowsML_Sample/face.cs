@@ -5,42 +5,43 @@ using Windows.Media;
 using Windows.Storage;
 using Windows.AI.MachineLearning.Preview;
 
-// aa35781f-f307-4695-8d91-0a53270eb066_113fcd3b-8b9f-43bb-918e-726e5eb62695
+// 47c46b62-55d4-418f-9667-bca58c105516_df5a0f61-d714-4789-8077-27f227995765
 
 namespace decode_WindowsML_Sample
 {
-    public sealed class Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695ModelInput
+    public sealed class _x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765ModelInput
     {
         public VideoFrame data { get; set; }
     }
 
-    public sealed class Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695ModelOutput
+    public sealed class _x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765ModelOutput
     {
         public IList<string> classLabel { get; set; }
         public IDictionary<string, float> loss { get; set; }
-        public Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695ModelOutput()
+        public _x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765ModelOutput()
         {
             this.classLabel = new List<string>();
             this.loss = new Dictionary<string, float>()
             {
                 { "chomado", float.NaN },
                 { "deployprince", float.NaN },
+                { "linyixian", float.NaN },
             };
         }
     }
 
-    public sealed class Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695Model
+    public sealed class _x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765Model
     {
         private LearningModelPreview learningModel;
-        public static async Task<Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695Model> CreateAa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695Model(StorageFile file)
+        public static async Task<_x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765Model> Create_x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765Model(StorageFile file)
         {
             LearningModelPreview learningModel = await LearningModelPreview.LoadModelFromStorageFileAsync(file);
-            Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695Model model = new Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695Model();
+            _x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765Model model = new _x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765Model();
             model.learningModel = learningModel;
             return model;
         }
-        public async Task<Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695ModelOutput> EvaluateAsync(Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695ModelInput input) {
-            Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695ModelOutput output = new Aa35781f_x002D_f307_x002D_4695_x002D_8d91_x002D_0a53270eb066_113fcd3b_x002D_8b9f_x002D_43bb_x002D_918e_x002D_726e5eb62695ModelOutput();
+        public async Task<_x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765ModelOutput> EvaluateAsync(_x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765ModelInput input) {
+            _x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765ModelOutput output = new _x0034_7c46b62_x002D_55d4_x002D_418f_x002D_9667_x002D_bca58c105516_df5a0f61_x002D_d714_x002D_4789_x002D_8077_x002D_27f227995765ModelOutput();
             LearningModelBindingPreview binding = new LearningModelBindingPreview(learningModel);
             binding.Bind("data", input.data);
             binding.Bind("classLabel", output.classLabel);

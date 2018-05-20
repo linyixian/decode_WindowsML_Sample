@@ -45,7 +45,7 @@ namespace decode_WindowsML_Sample
         private ImageVariableDescriptorPreview inputImageDescription;       
         private MapVariableDescriptorPreview outputMapDescription;
         private TensorVariableDescriptorPreview outputTensorDescription;
-        private int lossNum = 2;                                            //CustomVisionで定義したTagの数
+        private int lossNum = 3;                                            //CustomVisionで定義したTagの数
         private IDictionary<string,float> loss { get; set; }                //推定結果を受け取る
 
         /// <summary>
@@ -170,8 +170,8 @@ namespace decode_WindowsML_Sample
 
                 //FaceTrackingではNv12フォーマットのみ対応
                 using (VideoFrame previewFrame = new VideoFrame(BitmapPixelFormat.Nv12, 320, 240))
-                //CustomVisionで出力したモデルの入力は224x224サイズでフォーマットはBGRA8となる
-                using (VideoFrame inputFrame = new VideoFrame(BitmapPixelFormat.Bgra8, 224, 224))
+                //CustomVisionで出力したモデルの入力は227x227サイズでフォーマットはBGRA8となる
+                using (VideoFrame inputFrame = new VideoFrame(BitmapPixelFormat.Bgra8, 227, 227))
                 {
                     //ビデオフレームの取得
                     //フォーマットが違うので別々にフレームを取得
